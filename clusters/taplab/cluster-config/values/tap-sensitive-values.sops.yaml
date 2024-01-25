@@ -1,0 +1,41 @@
+tap_install:
+    sensitive_values:
+        shared:
+            image_registry:
+                project_path: ENC[AES256_GCM,data:XipQ/jwlOoKoBsHLfMvYjgWehkivOspav7lUDVpt8f8jLAeG7cUDMITb9y0=,iv:4DZyahU0Ctnfdkj+FFNDHmBEy0Wg42ONh7buHcS66GQ=,tag:QQSSIkoegYSUS/DD04fONg==,type:str]
+                username: ENC[AES256_GCM,data:8F8dJzU=,iv:IWzLJbKnCgRn+e2aVyKPiVxcQUOvsnlDtfunK46Jfao=,tag:IaFtErPIF11F7P6Ox5RGxg==,type:str]
+                password: ENC[AES256_GCM,data:bV7h1HoPO9fRZi4f,iv:NUo2WiiCqB/9JOuTyaQ+bXCbT0HyeCHhjI2xEElidQQ=,tag:tOjFDtVHqc4N0Wn8CWwjeA==,type:str]
+        tap_gui:
+            app_config:
+                auth:
+                    allowGuestAccess: ENC[AES256_GCM,data:+Uiyfw==,iv:6Kjgp57C6mdBzKx8TGQI43WNMzkwLLrjTqG0EOm/6wI=,tag:4a7OUwcXgYT8UEosXvkegw==,type:bool]
+                    environment: ENC[AES256_GCM,data:MStyWVd45IRXu7E=,iv:G8jTUAZqTlfWfT38yBnCOr56iF2Fxnmgbxr2UWHD0+A=,tag:5vtYO7eWmUs4fb89Mb0F9g==,type:str]
+                    providers:
+                        github:
+                            development:
+                                clientId: ENC[AES256_GCM,data:12DV0q1aAPrwBkNH9CK1nv1xQD4=,iv:KfhZ2IODIyRDKLTG90RGMcYiiR03R25lmVoS0MdAykQ=,tag:q/B+1MMxwRW/x50kAbqm7Q==,type:str]
+                                clientSecret: ENC[AES256_GCM,data:tCW5bvLYP/KuGHl3N0YPK2TaoZt4fdZNyGZcmh12I3J4oWLiHqFT1g==,iv:pF74PhP+ksicxeQ0OwcXy+xLrsXr+Zw5CoRp1JMyLsA=,tag:9j6PBxjwhgtBXt2vFg+LoA==,type:str]
+                integrations:
+                    github:
+                        - host: ENC[AES256_GCM,data:YxAkV5S4Qn56ZQ==,iv:HxinKp6WlC0UeTalyzFcfsaH7iThTftXtulwEMGtv5Y=,tag:8/M9e4SE+cBHPLrgncHPcw==,type:str]
+                          token: ENC[AES256_GCM,data:2pLtMwTZeNB5k4y+7qmNRTlWdVj36NdVH9BQYgaI5iJBhku7vmNd9w==,iv:QxB45RgtuhrzHIl9OTANkAGII95o27frfSHmW3e8C9U=,tag:Z5YxSkytiQYoDX8qhljf9A==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1u74ps32m3mcvd6zjaw8w2p3wwfucz0r2rxrsxmq8ldlyv5lapgkqle505u
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBDV3Jzc01FVU1SbDJIN2sx
+            TlVUbFduNTUrdFRtUWlDWGRUVGc3TWN3ZEhnCkRZNStHRkZFd1JMNWlsQXBSK2ZF
+            YUtSa1dPZlQxZzhmMjl5NmI0cWllMGcKLS0tIDIxKzNqMHRIcFpqclFBcVBPYjla
+            QkVSTFBkcjRFcURxUEcyMlRSZUNTUkUKdBJ5AUttlWV8PEs6eQCr4tscG/ZRQhUC
+            Xi+4vYVTnsP6VZaux62sr15l8X+Ikh5kQUQbjrC7FGWvyJ4nsP0DwQ==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2024-01-25T16:23:19Z"
+    mac: ENC[AES256_GCM,data:C6cdZt4pazLxDHBbkIYlsPX1nCLAKOmZBxUTGwE79Kphr6HffzCTTAZDa0mC5gsEQ+Alv0tvN4qgQc9bsNRXGGB1lnmw0QD9BEueZzlb41j2IuoZKsPEfp7/7ga51+Yz9WzC3YpLspS0hL3dqpgwGPlOfTSrpWWH/q8WfPjtuAI=,iv:N6qfGpFU919Dd7Zd6UevDjaTSLaPceRsKgXDRpZCLDY=,tag:eTApUX7Ux4WQODhOrBBcDw==,type:str]
+    pgp: []
+    unencrypted_suffix: _unencrypted
+    version: 3.7.3
